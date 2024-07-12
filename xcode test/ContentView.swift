@@ -73,8 +73,8 @@ struct ContentView: View {
     }
     func button()
     {
-        var playcardvalue = (String(Int.random(in: 2...14)))
-        var cpucardvalue = (String(Int.random(in: 2...14)))
+        let playcardvalue = (String(Int.random(in: 2...14)))
+        let cpucardvalue = (String(Int.random(in: 2...14)))
         playercard = "card"+playcardvalue
         cpucard = "card"+cpucardvalue
         if (playcardvalue>cpucardvalue)
@@ -82,7 +82,7 @@ struct ContentView: View {
             playerscore+=1
         }else if(cpucardvalue>playcardvalue)
         {
-            cpuscore+=1
+            cpuscore+=4
         }
             
     }
